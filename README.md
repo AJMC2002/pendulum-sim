@@ -5,7 +5,7 @@ A pendulum physics simulator written in C++. It generates the values of each phy
 ## Usage
 
 `git clone` this repository or download it as a zip. Open the terminal in the directory called `.../pendulum-sim/`
-and run
+and run:
 
 ```bash
 $cd build/
@@ -16,12 +16,14 @@ $./pendulum
 
 See your results as a csv in the `output` directory.
 
+> Note: You can edit the initial conditions in the const variables at the beginning of `src/main.cpp`.
+
 ## Examples
 
 These are test runs visualized with [CSV Plot](csvplot.com).
 
 Without noise:
-![v_x vs time](output/examples/v_x.png)
+![v_x vs time](examples/v_x.png)
 
 With noise:
-![v_x_noisy vs time](output/examples/v_x_noisy.png)
+![v_x_noisy vs time](examples/v_x_noisy.png)
