@@ -110,20 +110,5 @@ int main() {
 
 	fout.close();
 
-	std::vector<double> v_filtrada = filter.noisify(data["v_x"]);
-
-	for (auto v : v_filtrada) {
-		std::cout << v << "\n";
-	}
-
 	return 0;
 }
-
-// class NoiseFilter {
-//    public:
-// 	NoiseFilter() {}
-// 	std::vector<double> filter(&std::vector<double> data) {}
-
-//    private:
-// 	double some_Fing_var;
-// };
