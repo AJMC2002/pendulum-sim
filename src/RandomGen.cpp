@@ -4,9 +4,14 @@
 
 namespace pendulum {
 RandomGen::RandomGen(double mean, double stddev, double min, double max)
-	: distrib_(mean, stddev), min_(min), max_(max) {}
-
-[[nodiscard]] double RandomGen::gen() {
-	return std::clamp(distrib_(e_), min_, max_);
+    : distrib_(mean, stddev)
+    , min_(min)
+    , max_(max)
+{
 }
-}  // namespace pendulum
+
+[[nodiscard]] double RandomGen::gen()
+{
+    return std::clamp(distrib_(e_), min_, max_);
+}
+} // namespace pendulum
